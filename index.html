@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos.css">
     <title>Café Universitario</title>
 </head>
 <body>
@@ -17,9 +17,62 @@
                 <a href="contact">Contacto</a>
             </nav>
         </div>
+        <div id="sesion">
+            <button id="iniciarSesion">Iniciar Sesion</button>
+            <button id="unete">Únete</button>
+        </div>
     </header>
+    <main>
+        <div id="banner">
+            imagen va aqui
+        </div>
+        <div id="productos">
+            PRODUCTOS
+        </div>
+
+        <div id="formulario">
+            <h3>Opina de nuestro café Universitario!</h3>
+            <form id="registro">
+                <label class="formulario">Nombre completo:</label>
+                <input type="text" class="formulario">
+                <label class="formulario">Correo electrónico</label>
+                <input type="text" class="formulario">
+                <label class="formulario">Producto favorito</label>
+                    <option value="cafe" class="formulario">Café</option>
+                    <option value="te" class="formulario">Té</option>
+                    <option value="mokka" class="formulario">Mokka</option>
+                    <option value="latte" class="formulario">Latte</option>
+                <label class="formulario">Teléfono</label>
+                <input type="tel" class="formulario">
+                <label class="formulario">Puntuación</label>
+                <input type="range" class="formulario">
+            </form>
+        </div>
+        <div id="tabla">
+            <table id="tablaDeInteres">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Producto favorito</th>
+                    <th>Fecha</th>
+                </tr>
+            </table>
+        </div>
 
 
+
+    </main>
+
+    <footer>
+        <div id="logo">LOGO</div>
+        <div id="contacto">
+            CONTACTO
+        </div>
+        <div id="redes">
+            REDES SOCIALES
+        </div>
+
+
+    </footer>
 
 
 <script src="script.js"></script>
