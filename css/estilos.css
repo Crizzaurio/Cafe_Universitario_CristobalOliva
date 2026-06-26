@@ -24,6 +24,7 @@ body{
     align-items: center;
     justify-content: space-between;
     gap: 24px;
+    height: 160px;
 }
 
 .encabezado img{
@@ -49,7 +50,7 @@ body{
     gap: 10px;
 }
 
-#sesion button{
+.sesion button{
     padding: 10px 14px;
     border: 1px solid rgb(255, 255, 255);
     color: white;
@@ -244,25 +245,25 @@ th, td{
 
 .pie{
     background: linear-gradient(#6D3B07, #000);
-    color: white;
     padding: 24px 32px;
+    color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     gap: 24px;
-    border-radius: 8px;
-    flex-wrap: wrap;
 }
 
-.redes{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+a{
     color: white;
+    text-align: center;
+    text-decoration: none;
 }
 
 button:hover{
     background: #1c1c1c;
     color: white;
+}
+
+.sesion:hover{
+    background: #1c1c1c;
 }
