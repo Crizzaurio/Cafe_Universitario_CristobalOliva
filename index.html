@@ -3,86 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\estilos.css">
-    <title>Café Universitario</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Café Universitario Inacap</title>
 </head>
 <body>
-    <header>
-        <img src="img/cafe_png.png" alt="logo" height="120px"">
-        <div class="navegacion">
-            <nav>
-                <a href="inicio">Inicio</a>
-                <a href="nosotros">Nosotros</a>
-                <a href="productos">Productos</a>
-                <a href="contact">Contacto</a>
-            </nav>
-        </div>
-        <div id="sesion">
-            <button id="iniciarSesion">Iniciar Sesion</button>
-            <button id="unete">Únete</button>
-        </div>
-    </header>
-    <main>
-        <div id="banner">
-            <img src="img/banner_granos_cafe.png" alt="banner" width="1600" height="300">
-        </div>
-        <div id="productos">
-            PRODUCTOS
-        </div>
+    <div class="pagina">
+        <header class="encabezado">
+            <img src="img/cafe_png.png" alt="logo" height="120">
+            <div class="navegacion">
+                <nav class="contactos">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#productos">Productos</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+            </div>
+            <div id="sesion">
+                <button id="iniciarSesion">Iniciar Sesion</button>
+                <button id="unete">Únete</button>
+            </div>
+        </header>
 
-        <div id="formulario">
-            <h3>Opina de nuestro café Universitario!</h3>
-            <form id="registro">
-                <label class="formulario">Nombre completo:</label>
-                <input type="text" class="formulario">
+        <main class="contenido">
+            <div class="contenedorImagen">
+                <img src="img/banner_saco_cafe.png" alt="banner" class="imagenSuperpuesta">
+                <div class="textoSuperpuesto">
+                    <h3 class="nosotros">Nosotros</h3>
+                    <p>Somos el café universitario del instituto! Disfruta de un subidón de energía para pasar tus ramos y pasar un buen rato, tenemos espacios libres para que descanses y puedas compartir con tus compañeros</p>
+                </div>
+            </div>
 
-                <label class="formulario">Correo electrónico</label>
-                <input type="text" class="formulario">
+            <section id="productos" class="seccion">
+                <h3>Nuestros productos</h3>
+                <div class="productos-grid">
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/taza_cafe_png.png" alt="Taza de café" width="250px">
+                        </div>
+                        <h4>Café clásico</h4>
+                        <p>Un café aromático y reconfortante para comenzar el día.</p>
+                    </article>
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/te_png.png" alt="Té" width="250px">
+                        </div>
+                        <h4>Té de hierbas</h4>
+                        <p>Una opción suave y relajante para los momentos de estudio.</p>
+                    </article>
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/mokka_png.png" alt="Mokka" width="250px">
+                        </div>
+                        <h4>Mokka</h4>
+                        <p>Una bebida dulce y cremosa con un sabor muy característico.</p>
+                    </article>
+                    <article class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="img/latte_png.png" alt="Latte" width="250px">
+                        </div>
+                        <h4>Latte</h4>
+                        <p>Perfecto para quienes disfrutan de un sabor suave y balanceado.</p>
+                    </article>
+                </div>
+            </section>
 
-                <label class="formulario">Producto favorito</label>
-                <select class="formulario">
-                    <option>Selecciona tu preferencia</option>
-                    <option value="cafe">Café</option>
-                    <option value="te">Té</option>
-                    <option value="mokka">Mokka</option>
-                    <option value="latte">Latte</option>
+            <section id="formulario" class="seccion">
+                <h3>Opina de nuestro café Universitario!</h3>
+                <form>
+                    <label>Nombre completo</label>
+                    <input type="text" id="nombre">
 
-                <label class="formulario">Teléfono</label>
-                <input type="tel" class="formulario">
+                    <label>Correo electrónico</label>
+                    <input type="text" id="correo">
 
-                <label class="formulario">Puntuación</label>
-                <input type="range" class="formulario">
-            </form>
-        </div>
-        <section id="tabla">
-            <table id="tablaDeInteres">
-                <thead>
-                    <tr class="tr">
-                        <th>Nombre</th>
-                        <th>Producto favorito</th>
-                        <th>Fecha</th>
-                    </tr>
-                </thead>
-            </table>
-        </section>
+                    <label>Teléfono</label>
+                    <input type="text" id="telefono" required placeholder="912345678">
 
+                    <label>Producto favorito</label>
+                    <select id="producto">
+                        <option>Selecciona tu preferencia</option>
+                        <option value="Café">Café</option>
+                        <option value="Té de hierbas">Té</option>
+                        <option value="Mokka">Mokka</option>
+                        <option value="Latte">Latte</option>
+                    </select>
 
+                    <label>Dejanos tu opinión</label>
+                    <textarea id="opinion" rows="3">☕</textarea>
 
-    </main>
+                </form>
 
-    <footer>
-        <div id="logo">LOGO</div>
-        <div id="contacto">
-            CONTACTO
-        </div>
-        <div id="redes">
-            REDES SOCIALES
-        </div>
+                <div class="botonesform">
+
+                    <button type="button" onclick="registrarOpinion()" class="botonazo">Enviar</button>
+
+                    <button type="button" onclick="limpiarFormulario()" class="botonazo">Limpiar</button>
+
+                    <div id="mensaje"></div>
+
+                </div>
 
 
-    </footer>
+            </section>
 
 
-<script src="js\script.js"></script>
+            <section class="tabla seccion">
+                <table>
+                    <thead>
+                        <h3>Tablero de opiniones 📌</h3>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Producto favorito</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaOpiniones"></tbody>
+                </table>
+            </section>
+
+        </main>
+
+        <footer class="pie">
+            <div id="logo">
+                <img src="img/cafe_png.png" alt="logo" height="120">
+            </div>
+            <div class="navegacion">
+                <div class="contactosFooter">
+                <a href="">Contacto</a>
+                </div>
+            </div>
+            <div id="redes">
+                <div id="logos">
+
+                    <img src="img/logo_instagram.png" alt="@cafeteria" width="30px" class="logo">
+                    <img src="img/logo_telefono.png" alt="+569133" width="30px" class="logo">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

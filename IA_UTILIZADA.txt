@@ -1,0 +1,11 @@
+1. Primer intervención GITHUB COPILOT:
+Sin cambiar ningún color, fuente de texto, necesito que reordenes el código css y html para que la presentación de la página sea más coherente, generando espacios simétricos en el header, body y footer.
+
+2.
+Haz que después de apretar el botón "Enviar" se genere una linea en la tabla inferior con la información correspondiente (Nombre, Producto favorito y la fecha actual)
+
+3.
+En la id = "productos", genera cuadros que queden listos para ingresar fotos representativas de ciertos productos, que idealmente sean de 250px x 250px para ingresar texto que describa estos mismos
+
+4.
+Ahora que las imágenes están dispuestas en sus cuadros, haz que se vean correctamente, independiente del tamaño de la pantalla o el dispositivo en el que se vea
