@@ -24,7 +24,7 @@
     </header>
     <main>
         <div id="banner">
-            imagen va aqui
+            imagen va aquis
         </div>
         <div id="productos">
             PRODUCTOS
@@ -35,28 +35,36 @@
             <form id="registro">
                 <label class="formulario">Nombre completo:</label>
                 <input type="text" class="formulario">
+
                 <label class="formulario">Correo electrónico</label>
                 <input type="text" class="formulario">
+
                 <label class="formulario">Producto favorito</label>
-                    <option value="cafe" class="formulario">Café</option>
-                    <option value="te" class="formulario">Té</option>
-                    <option value="mokka" class="formulario">Mokka</option>
-                    <option value="latte" class="formulario">Latte</option>
+                <select class="formulario">
+                    <option>Selecciona tu preferencia</option>
+                    <option value="cafe">Café</option>
+                    <option value="te">Té</option>
+                    <option value="mokka">Mokka</option>
+                    <option value="latte">Latte</option>
+
                 <label class="formulario">Teléfono</label>
                 <input type="tel" class="formulario">
+
                 <label class="formulario">Puntuación</label>
                 <input type="range" class="formulario">
             </form>
         </div>
-        <div id="tabla">
+        <section id="tabla">
             <table id="tablaDeInteres">
-                <tr>
-                    <th>Nombre</th>
-                    <th>Producto favorito</th>
-                    <th>Fecha</th>
-                </tr>
+                <thead>
+                    <tr class="tr">
+                        <th>Nombre</th>
+                        <th>Producto favorito</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
             </table>
-        </div>
+        </section>
 
 
 
